@@ -1,0 +1,16 @@
+import { ModeToggle } from '@/components/providers/mode-toggle';
+import { Button } from '@/components/ui/button';
+import { UserButton } from '@clerk/nextjs';
+import Image from 'next/image'
+
+export default function Home() {
+  return (
+    <div>
+     <UserButton
+      afterSignOutUrl='/'
+     />
+     <ModeToggle />
+    </div>
+    
+  );
+}
